@@ -6,6 +6,7 @@ import IP.entity.Needs;
 import IP.entity.Offering;
 import IP.repository.NeedsRepo;
 import IP.service.OfferingService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

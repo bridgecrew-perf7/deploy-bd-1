@@ -14,9 +14,7 @@
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
     <properties>
-       <!-- <java.version>11</java.version> -->
-        <java.version>1.8</java.version>
-        <maven.compiler.release>8</maven.compiler.release>
+        <java.version>11</java.version>
     </properties>
     <dependencies>
         <dependency>
@@ -36,21 +34,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <dependency>
-            <groupId>javax.ws.rs</groupId>
-            <artifactId>javax.ws.rs-api</artifactId>
-            <version>2.0</version>
-        </dependency>
-        <dependency>
-            <groupId>org.json</groupId>
-            <artifactId>json</artifactId>
-            <version>20160810</version>
-        </dependency>
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>2.2</version>
-        </dependency>
+
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -76,6 +60,7 @@
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
         </dependency>
+
     </dependencies>
 
     <build>
@@ -93,32 +78,6 @@
                     </excludes>
                 </configuration>
             </plugin>
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-dependency-plugin</artifactId>-->
-<!--                <version>3.0.1</version>-->
-<!--                <executions>-->
-<!--                    <execution>-->
-<!--                        <id>copy-dependencies</id>-->
-<!--                        <phase>package</phase>-->
-<!--                        <goals><goal>copy-dependencies</goal></goals>-->
-<!--                    </execution>-->
-<!--                </executions>-->
-<!--            </plugin>-->
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-war-plugin</artifactId>-->
-<!--                <version>2.6</version>-->
-<!--                <configuration>-->
-<!--                    <warSourceDirectory>src/main/jwebapp</warSourceDirectory>-->
-<!--                    <warName>gs-maven-0.1.0</warName>-->
-<!--                    <failOnMissingWebXml>false</failOnMissingWebXml>-->
-<!--                    <processTypes>-->
-<!--                        <web>-->
-<!--                            java $JAVA_OPTS -cp target/classes:target/dependency/* DemoApplication-->
-<!--                        </web>-->
-<!--                    </processTypes>-->
-<!--                </configuration>-->
         </plugins>
     </build>
 
