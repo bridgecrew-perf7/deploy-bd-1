@@ -1,4 +1,4 @@
-package IP.controller;
+package IP;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
